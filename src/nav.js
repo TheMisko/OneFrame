@@ -7,7 +7,7 @@ const Nav = () => {
     <Navbar fixed="top" className="nav-color">
       <Navbar.Brand>
         <Link to="/" style={{ textDecoration: "none" }}>
-          <h1>OneFrame</h1>
+          <h1>One Frame</h1>
         </Link>
       </Navbar.Brand>
     </Navbar>

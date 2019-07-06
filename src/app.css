@@ -89,7 +89,7 @@
 }
 
 .yo {
-  position: absolute;
+  position: fixed;
   width: 45%;
   width: 480px;
   top: 25%;
@@ -174,11 +174,11 @@
 
 .gallery {
   display: flex;
-
   flex-wrap: wrap;
-  justify-content: center;
 
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .gallery img {
@@ -204,7 +204,9 @@
 }
 
 .gallery-header {
-  margin: 10px;
+  margin-right: 120px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 .link {
@@ -224,4 +226,105 @@
 .imdb-link {
   margin-left: 15px;
   padding-top: 6px;
+}
+
+.card-flex {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.hover-card h3 {
+  opacity: 0;
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.hover-card:hover h3 {
+  opacity: 1;
+}
+
+.hover-card:hover img {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.paint-card-flex {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+
+.paint-hover-card h3 {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.paint-hover-card:hover {
+  cursor: pointer;
+
+  opacity: 0.7;
+}
+
+.paint-hover-card:hover h3 {
+  opacity: 1;
+}
+
+.card-item {
+  text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .flex1 img {
+    height: 100px;
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .flex2 img {
+    height: 100px;
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .card-flex h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .paint-card-flex h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .gallery img {
+    height: 100px;
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .gallery h3 {
+    font-size: 15px;
+  }
+}
+
+.paint-card-flex h3 {
+  text-align: center;
+}
+
+.card-marg {
+  margin-right: 15px;
+  margin-left: 15px;
 }

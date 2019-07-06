@@ -16,15 +16,14 @@ const Divider = () => {
   const [Information, setInformation] = useContext(informationContext);
   const [On, setOn] = useState(false);
   const [MovieName, setMovieName] = useState("");
-  const [ID, setID] = useState("");
+
   const [painter, setPainter] = useState("");
   const [slike, setSlike] = useState(information_all);
+
   const handleClick = (movie, paint) => {
     setOn(!On);
     setMovieName(movie);
-
     setPainter(paint);
-    console.log(paint);
   };
 
   return (
@@ -44,21 +43,16 @@ const Divider = () => {
                 <div className="flex1">
                   {Information.slice(0, 9).map(info => (
                     <Card border="light text-white">
-                      <div className="hover">
+                      <div className="paint-hover-card">
                         <Image className="shadow" src={info.src} rounded />
                         <Card.ImgOverlay
-                          className="overlay"
-                          onClick={() =>
-                            handleClick(
-                              info.movie,
-
-                              info.painter
-                            )
-                          }
+                          onClick={() => handleClick(info.movie, info.painter)}
                         >
-                          <Card.Title>
-                            <h2>{info.painter}</h2>
-                          </Card.Title>
+                          <div className="paint-card-flex">
+                            {info.movie.map(mov => (
+                              <h3 className="paint-card-item">{mov}</h3>
+                            ))}
+                          </div>
                         </Card.ImgOverlay>
                       </div>
                     </Card>
@@ -81,22 +75,16 @@ const Divider = () => {
                 <div className="flex2">
                   {slike.slice(0, 9).map(info => (
                     <Card border="light text-white">
-                      <div className="hover">
+                      <div className="hover-card">
                         <Image className="shadow" src={info.src} rounded />
                         <Card.ImgOverlay
-                          className="overlay"
-                          onClick={() =>
-                            handleClick(
-                              info.movie,
-                              info.id,
-
-                              info.painter
-                            )
-                          }
+                          onClick={() => handleClick(info.movie)}
                         >
-                          <Card.Title>
-                            <h2>{info.painter}</h2>
-                          </Card.Title>
+                          <div className="card-flex">
+                            {info.movie.slice(0, 3).map(mov => (
+                              <h3 className="card-item">{mov}</h3>
+                            ))}
+                          </div>
                         </Card.ImgOverlay>
                       </div>
                     </Card>
@@ -111,7 +99,6 @@ const Divider = () => {
         handleClick={handleClick}
         on={On}
         movieName={MovieName}
-        ID={ID}
         painter={painter}
       />
     </>

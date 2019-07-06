@@ -32,16 +32,17 @@ const Gallery = () => {
         </Card.Header>
         <div className="gallery">
           {Information.map(info => (
-            <Card border="light text-white">
-              <div className="hover">
+            <Card border="light text-white" className="card-marg">
+              <div className="paint-hover-card">
                 <Image className="shadow" src={info.src} rounded />
                 <Card.ImgOverlay
-                  className="overlay"
                   onClick={() => handleClick(info.movie, info.painter)}
                 >
-                  <Card.Title className="text-center">
-                    <h2>{info.painter}</h2>
-                  </Card.Title>
+                  <div className="paint-card-flex">
+                    {info.movie.map(mov => (
+                      <h3 className="paint-card-item">{mov}</h3>
+                    ))}
+                  </div>
                 </Card.ImgOverlay>
               </div>
             </Card>

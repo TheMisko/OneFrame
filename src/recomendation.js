@@ -37,9 +37,11 @@ const Recomendation = ({ on, movieName, handleClick, painter }) => {
                         Movie Details
                       </Button>
                     </Link>
-                    <a href={wikiLink}>
-                      <h5 className="link">{painter}</h5>
-                    </a>
+                    {painter && (
+                      <a href={wikiLink}>
+                        <h5 className="link">Artist: {painter}</h5>
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}

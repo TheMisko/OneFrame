@@ -2,7 +2,7 @@ export const information = [
   {
     src:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Jacques-Louis_David_-_La_Mort_de_Marat.jpg/300px-Jacques-Louis_David_-_La_Mort_de_Marat.jpg",
-    movie: ["About Schmidt "],
+    movie: ["About Schmidt"],
     painter: "Jacques Louis David "
   },
   {
@@ -120,6 +120,109 @@ export const information = [
       "https://cdn.onebauer.media/one/empire-legacy/uploaded/Benjamin-Robert-Haydon-Napoleon-At-St-Helena.jpg?quality=50&format=jpg",
     movie: ["The Duellists"],
     painter: "Benjamin Robert Haydon"
+  },
+  {
+    src:
+      "https://imgc.artprintimages.com/img/print/self-portrait-1889_u-l-pg53fb0.jpg?h=550&w=550",
+    movie: ["Loving Vincent"],
+    painter: "Vincent Van Gogh"
+  },
+  {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/The_Last_Supper_Leonardo_Da_Vinci_High_Resolution_size_32x16.jpg/1920px-The_Last_Supper_Leonardo_Da_Vinci_High_Resolution_size_32x16.jpg",
+    movie: ["Inherent Vice"],
+    painter: "Leonardo Da Vinci"
+  },
+  {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/2/22/Flandrin%2C_Hippolyte_%281805-1864%29_-_Jeune_homme_nu_assis.._1855_-_Louvre.jpg",
+    movie: ["There Will Be Blood"],
+    painter: "Jean Hippolyte Flandrin"
+  },
+  {
+    src: "https://live.staticflickr.com/6120/6211000063_2271d06b9d_b.jpg",
+    movie: ["Passion"],
+    painter: "Jean Auguste Dominique Ingres"
+  },
+  {
+    src:
+      "https://www.nrm.org/wp2016/wp-content/uploads/2011/09/Freedom-from-Fear_web.jpg",
+    movie: ["Empire of the Sun"],
+    painter: "Norman Rockwell"
+  },
+  {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg/1200px-Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg",
+    movie: ["The Mirror"],
+    painter: "Pieter Bruegel the Elder"
+  },
+  {
+    src:
+      "https://paintingandframe.com/uploadpic/jacques_louis_david/big/napoleon_crossing_the_alps.jpg",
+    movie: ["Marie Antoinette"],
+    painter: "Jacques-Louis David"
+  },
+  {
+    src:
+      "https://uploads1.wikiart.org/images/odd-nerdrum/dawn-1990.jpg!Large.jpg",
+    movie: ["The Cell"],
+    painter: "Odd Nerdrum"
+  },
+  {
+    src:
+      "https://i2.wp.com/paintersonpaintings.com/wp-content/uploads/2018/12/269297.jpg?resize=741%2C587&ssl=1",
+    movie: ["The Imaginarium of Doctor Parnassus"],
+    painter: "Grant Wood"
+  },
+  {
+    src: "https://arthive.com/res/media/img/oy800/work/b7d/537925.jpg",
+    movie: ["Barry Lyndon"],
+    painter: "John Costable"
+  },
+  {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Vel%C3%A1zquez_-_de_Breda_o_Las_Lanzas_%28Museo_del_Prado%2C_1634-35%29.jpg/1200px-Vel%C3%A1zquez_-_de_Breda_o_Las_Lanzas_%28Museo_del_Prado%2C_1634-35%29.jpg",
+    movie: ["Alatriste"],
+    painter: "Diego Velazquez"
+  },
+  {
+    src:
+      "https://cv.vic.gov.au/media/oldmedia/6794/65071_iimage01_1360px_300dpi.jpg",
+    movie: ["Picnic at Hanging Rock"],
+    painter: "William Ford"
+  },
+  {
+    src:
+      "https://150ans150oeuvres.uqam.ca/wp-content/uploads/2017/08/new-1965-Colville.jpg",
+    movie: ["Moonrise Kingdom"],
+    painter: "Alex Colville"
+  },
+  {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Caspar_David_Friedrich_-_Abtei_im_Eichwald_-_Google_Art_Project.jpg/1200px-Caspar_David_Friedrich_-_Abtei_im_Eichwald_-_Google_Art_Project.jpg",
+    movie: ["The Revenant"],
+    painter: "Caspar David Friedrich"
+  },
+  {
+    src: "https://live.staticflickr.com/4508/37520544501_63216f8e2d_b.jpg",
+    movie: ["The Truman Show"],
+    painter: "Rene Magritte"
+  },
+  {
+    src: "https://sooluciona.com/wp-content/uploads/2018/10/los_elefantes.jpg",
+    movie: ["Mad Max: Fury Road"],
+    painter: "Salvador Dali"
+  },
+  {
+    src: "http://gatesofvienna.net/wp-content/uploads/2015/01/prisoners.jpg",
+    movie: ["A Clockwork Orange"],
+    painter: "Vincent Van Gogh"
+  },
+  {
+    src:
+      "https://www.vincentvangogh.org/images/paintings/wheat-field-with-crows.jpg",
+    movie: ["Dreams"],
+    painter: "Vincent Van Gogh"
   },
   {
     src:

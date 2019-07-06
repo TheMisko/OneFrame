@@ -30,13 +30,16 @@ const RandomGallery = () => {
         </Card.Header>
         <div className="gallery">
           {slike.map(info => (
-            <Card border="light text-white">
-              <div className="hover">
+            <Card border="light text-white" className="card-marg">
+              <div className="hover-card">
                 <Image className="shadow" src={info.src} rounded />
-                <Card.ImgOverlay
-                  className="overlay"
-                  onClick={() => handleClick(info.movie, info.id, info.name)}
-                />
+                <Card.ImgOverlay onClick={() => handleClick(info.movie)}>
+                  <div className="card-flex">
+                    {info.movie.slice(0, 3).map(mov => (
+                      <h3 className="card-item">{mov}</h3>
+                    ))}
+                  </div>
+                </Card.ImgOverlay>
               </div>
             </Card>
           ))}

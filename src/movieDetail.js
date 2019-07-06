@@ -3,6 +3,8 @@ import "./app.css";
 import Nav from "./nav";
 
 const MovieDetail = ({ match }) => {
+  const error =
+    "http://www.macedonrangeshalls.com.au/wp-content/uploads/2017/10/image-not-found.png";
   const APP_KEY = "19e233398390f3df83538dff1bb54357";
 
   const [title, setTitle] = useState("");
@@ -18,20 +20,32 @@ const MovieDetail = ({ match }) => {
     getMovie();
   }, []);
   const getMovie = async () => {
-    const response = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${APP_KEY}&language=en-US&query=${
-        match.params.id
-      }&page=1&include_adult=false`
-    );
-    const data = await response.json();
+    try {
+      const response = await fetch(
+        `https://api.themoviedb.org/3/search/movie?api_key=${APP_KEY}&language=en-US&query=${
+          match.params.id
+        }&page=1&include_adult=false`
+      );
+      const data = await response.json();
+      setTitle(data.results[0].title);
+      setPoster(data.results[0].poster_path);
+      setDate(data.results[0].release_date);
+      setInfo(data.results[0].overview);
+      setId(data.results[0].id);
 
-    setTitle(data.results[0].title);
-    setPoster(data.results[0].poster_path);
-    setDate(data.results[0].release_date);
-    setInfo(data.results[0].overview);
-    setId(data.results[0].id);
+      console.log(data);
+    } catch (error) {
+      console.log("error:", error);
+      setInfo("INFORAMTION NOT FOUND");
+    }
 
-    console.log(data);
+    // setTitle(data.results[0].title);
+    // setPoster(data.results[0].poster_path);
+    // setDate(data.results[0].release_date);
+    // setInfo(data.results[0].overview);
+    // setId(data.results[0].id);
+
+    // console.log(data);
   };
 
   useEffect(() => {
@@ -42,6 +56,7 @@ const MovieDetail = ({ match }) => {
       `https://api.themoviedb.org/3/movie/${id}/external_ids?api_key=${APP_KEY}`
     );
     const data2 = await response2.json();
+
     setImdb(data2.imdb_id);
   };
 
@@ -64,7 +79,7 @@ const MovieDetail = ({ match }) => {
               </a>
             </h1>
 
-            <h4>{date}</h4>
+            <h4>Release Date: {date}</h4>
             <div className="details-info">
               <h5>{info}</h5>
             </div>
