@@ -66,10 +66,17 @@ const MovieDetail = ({ match }) => {
       <div className="details-background">
         <div className="details-card">
           <div className="details-left">
-            <img
-              className="details-img"
-              src={`https://image.tmdb.org/t/p/w500${poster}`}
-            />
+            {poster ? (
+              <img
+                className="details-img"
+                srcset={`https://image.tmdb.org/t/p/w500${poster}`}
+              />
+            ) : (
+              <img
+                className="details-img"
+                src="https://media.wired.com/photos/5a0201b14834c514857a7ed7/master/w_582,c_limit/1217-WI-APHIST-01.jpg"
+              />
+            )}
           </div>
           <div className="details-right">
             <h1>

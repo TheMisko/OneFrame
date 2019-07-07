@@ -6,6 +6,6 @@
 // @MEDIA SMANJITI RECOMEDATION -
 // ERROR PAGE ZA MOvie details +
 // DEV ED USESTATE VALUE ERORE /
-// EMPTY IMAGE KAD SE UCITAVA API -
+// EMPTY IMAGE KAD SE UCITAVA API /
 
-// UPDATE GIT!!!!!!!!!!!!!!!!!!!!
+// UPDATE GIT!!!!!!!!!!!!!!!!!!!! +
